@@ -17,6 +17,9 @@
 # Debugger Files
 *.pdb
 
+# debug information files
+*.dwo
+
 # Compiled Dynamic libraries
 *.so
 *.dylib
@@ -36,6 +39,50 @@
 *.exe
 *.out
 *.app
+a.out
 
-# debug information files
-*.dwo
+# Common build directories (CMake/Make/Ninja)
+build/
+build-*/
+cmake-build-*/
+out/
+bin/
+dist/
+Debug/
+Release/
+
+# -------------------------
+# VS Code
+# -------------------------
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# -------------------------
+# CLion / JetBrains
+# -------------------------
+.idea/
+*.iml
+cmake-build-debug/
+cmake-build-release/
+cmake-build-relwithdebinfo/
+cmake-build-minsizerel/
+
+# CLion local files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+.ninja_deps
+.ninja_log
+*.ninja
+
+# macOS noise
+.DS_Store
+
+# Linux editor swap/backup
+*~
+*.swp
+*.swo
